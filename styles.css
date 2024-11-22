@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap'); /* A pleasant font for the theme */
+
+body {
+   font-family: 'Raleway', sans-serif;
+   font-size: 18px;
+   font-weight: 300;
+   color: #fff;
+   background-color: #4a0072; /* Warm purple background */
+   margin: 0;
+   padding: 20px;
+   text-align: center;
+}
+
+h1 {
+   font-size: 36px;
+   font-weight: 700;
+   color: #fff; /* Bold white font for the header */
+   margin-bottom: 20px;
+}
+
+.quiz-container {
+   background-color: #6a1b9a; /* A lighter purple */
+   border-radius: 8px;
+   padding: 20px;
+   max-width: 600px;
+   margin: 40px auto; /* Center the container horizontally and vertically */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   text-align: center; /* Center all content inside */
+}
+
+#quiz {
+   margin-bottom: 20px;
+}
+
+button {
+   font-family: 'Raleway', sans-serif;
+   font-size: 16px;
+   background-color: #ff4081; /* Pinkish button */
+   color: #fff;
+   border: none;
+   border-radius: 4px;
+   padding: 10px 20px;
+   cursor: pointer;
+   margin: 10px;
+}
+
+button:hover {
+   background-color: #f50057; /* Darker pink when hovered */
+}
+
+.button-container {
+   display: flex;
+   justify-content: center; /* Center buttons horizontally */
+   gap: 10px; /* Add space between buttons */
+   flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+#results {
+   font-size: 20px;
+   font-weight: 700;
+   margin-top: 20px;
+   color: #fff; /* White text for results */
+}
+
+#timer {
+   font-size: 20px;
+   font-weight: 700;
+   margin-bottom: 20px;
+}
+
+.slide {
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   z-index: 1;
+   opacity: 0;
+   transition: opacity 0.5s;
+}
+
+.active-slide {
+   opacity: 1;
+   z-index: 2;
+}
